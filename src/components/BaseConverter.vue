@@ -30,8 +30,8 @@
                   <q-field class="q-mt-xl q-ml-sm q-title">{{ outputValue }}</q-field>
                 </div>
                 <div class="q-mt-md">
-                  <q-btn @click="reset" label="Reset"/>
-                  <q-btn @click="back" label="Back"/>
+                  <q-btn @click="reset" :label="$t('Reset')"/>
+                    <q-btn @click="back" :label="$t('Back')"/>
                 </div>
             </q-card-main>
           </q-card>

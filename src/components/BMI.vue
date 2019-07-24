@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-lg">
     <div>
-      <h4 class="q-mb-md">Body Mass Index</h4>
+      <h4 class="q-mb-md">{{ $t('mass_body_index') }}</h4>
       <div class="row">
         <div class="col-12 col-md-12 col-lg-6">
           <q-card>
@@ -9,7 +9,7 @@
               <q-card-main>
                 <div class="row">
                   <div class="col-8 col-md-7 col-sm-6 col-xs-5 q-mb-md" >
-                    <q-input type="number" v-model="height" float-label="Your height"/>
+                    <q-input type="number" v-model="height" :float-label="$t('height_label')"/>
                   </div>
                     <div class="col-3 col-xs-auto q-ml-lg">
                       <q-select
@@ -23,7 +23,7 @@
                 </div>
                 <div class="row">
                   <div class="col-8 col-md-7 col-sm-6 col-xs-5 q-mb-md">
-                    <q-input type="number" v-model="weight" float-label="Your weight"/>
+                    <q-input type="number" v-model="weight" :float-label="$t('weight_label')"/>
                   </div>
                   <div class="col-3 col-xs-auto q-ml-lg">
                     <q-select
@@ -97,12 +97,8 @@
                                 </a>
                                   </q-field>
                                   <div class="q-mt-md">
-                                    <q-btn
-                                       @click="reset"
-                                       label="Reset"/>
-                                    <q-btn
-                                       @click="back"
-                                       label="Back"/>
+                                    <q-btn @click="reset" :label="$t('Reset')"/>
+                                      <q-btn @click="back" :label="$t('Back')"/>
                                   </div>
               </q-card-main>
            </q-card>
@@ -124,16 +120,16 @@ export default {
       gender: 'male',
       height: null,
       weight: null,
-      weightUnit: 'kg',
-      heightUnit: 'cm',
+      weightUnit: this.$config.defaultUnits.weight,
+      heightUnit: this.$config.defaultUnits.height,
       seen: false,
       // TODO: i18n
       bmiMessage: {
-        underWeight: 'You are Under weight',
-        normal: 'You are Normal',
-        overWeight: 'You are Overweight',
-        obesity: 'You are Obesity',
-        severeObesity: 'You are Severe obesity'
+        underWeight: this.$t('bmi_underWeight'),//'You are Under weight',
+        normal: this.$t('bmi_normal'), //'You are Normal',
+        overWeight: this.$t('bmi_overWeight'), //'You are Overweight',
+        obesity: this.$t('bmi_obesity'), //'You are Obesity',
+        severeObesity: this.$t('bmi_severeObesity') //'You are Severe obesity'
       }
     }
   },
@@ -166,7 +162,7 @@ export default {
       } else if (bmi >= 25 && bmi < 30) {
         out = this.bmiMessage.overWeight
       } else if (bmi >= 30 && bmi < 35) {
-        out = this.bmiMessage.obisity
+        out = this.bmiMessage.obesity
       } else if (bmi >= 35) {
         out = this.bmiMessage.severeObesity
       }
