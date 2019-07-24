@@ -125,11 +125,11 @@ export default {
       seen: false,
       // TODO: i18n
       bmiMessage: {
-        underWeight: this.$t('bmi_underWeight'),//'You are Under weight',
-        normal: this.$t('bmi_normal'), //'You are Normal',
-        overWeight: this.$t('bmi_overWeight'), //'You are Overweight',
-        obesity: this.$t('bmi_obesity'), //'You are Obesity',
-        severeObesity: this.$t('bmi_severeObesity') //'You are Severe obesity'
+        underWeight: this.$t('bmi_underWeight'), // 'You are Under weight',
+        normal: this.$t('bmi_normal'), // 'You are Normal',
+        overWeight: this.$t('bmi_overWeight'), // 'You are Overweight',
+        obesity: this.$t('bmi_obesity'), // 'You are Obesity',
+        severeObesity: this.$t('bmi_severeObesity') // 'You are Severe obesity'
       }
     }
   },
