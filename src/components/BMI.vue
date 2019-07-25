@@ -1,7 +1,18 @@
 <template>
   <q-page class="q-pa-lg">
-    <div>
-      <h4 class="q-mb-md">{{ $t('mass_body_index') }}</h4>
+    <div class="row">
+      <h4 class="q-mb-md col-12 col-md-12 col-lg-12" >{{ $t('body_mass_index') }}
+        <a
+          href=https://en.wikipedia.org/wiki/Body_mass_index     
+          target="_blank"
+          title="What's BMI?">
+          <q-icon
+          class="text-warning" 
+          name="help"
+          />
+        </a>
+      </h4>
+    </div>
       <div class="row">
         <div class="col-12 col-md-12 col-lg-6">
           <q-card>

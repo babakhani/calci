@@ -8,7 +8,7 @@ const messages = {
   app_name: 'Shalculator',
   golden_ratio: 'Golden Ratio',
   value_label: 'Enter value',
-  mass_body_index: 'Mass Body Index',
+  body_mass_index: 'Body Mass Index',
   height_label: 'Your height',
   weight_label: 'Your weight',
   height_unit: 'Height Unit',
