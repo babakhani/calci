@@ -8,13 +8,13 @@
             <q-card-separator />
               <q-card-main>
                 <div class="row">
-                  <div class="col-8 col-md-7 col-sm-6 col-xs-5 q-mb-md" >
+                  <div class="col-8 col-md-8 col-sm-8 col-xs-12 q-mb-md q-pr-md" >
                     <q-input type="number" v-model="height" :float-label="$t('height_label')"/>
                   </div>
-                    <div class="col-3 col-xs-auto q-ml-lg">
+                    <div class="col-4 col-lg-4 col-md-4 col-xm-4 col-sm-4 col-xs-12 q-pr-md">
                       <q-select
                          v-model="heightUnit"
-                         float-label="Unit"
+                         :float-label="$t('height_unit')"
                          :options="unit.length"
                          :separator="true"
                          radio
@@ -22,13 +22,13 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-8 col-md-7 col-sm-6 col-xs-5 q-mb-md">
+                  <div class="col-8 col-md-8 col-sm-8 col-xs-12 q-mb-md q-pr-md">
                     <q-input type="number" v-model="weight" :float-label="$t('weight_label')"/>
                   </div>
-                  <div class="col-3 col-xs-auto q-ml-lg">
+                    <div class="col-4 col-lg-4 col-md-4 col-xm-4 col-sm-4 col-xs-12 q-pr-md">
                     <q-select
                        v-model="weightUnit"
-                       float-label="Unit"
+                         :float-label="$t('weight_unit')"
                        :options="unit.weight"
                        :separator="true"
                        radio

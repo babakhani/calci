@@ -11,12 +11,17 @@ const messages = {
   mass_body_index: 'Mass Body Index',
   height_label: 'Your height',
   weight_label: 'Your weight',
+  height_unit: 'Height Unit',
+  weight_unit: 'Weight Unit',
   bmi_underWeight: 'You are Under weight',
   bmi_normal: 'You are Normal',
   bmi_overWeight: 'You are Overweight',
   bmi_obesity: 'You are Obesity',
   bmi_severeObesity: 'You are Severe obesity',
   data_storage_converter: 'Data Storage Converter',
+  input_unit: 'Input Unit',
+  output_unit: 'Output Unit',
+  base_converter: 'Base Converter',
   reset: 'Reset',
   back: 'Back'
   }

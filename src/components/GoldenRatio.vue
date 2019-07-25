@@ -8,7 +8,7 @@
             <q-card-separator />
               <q-card-main>
                 <div class="row q-mt-lg">
-                  <div class="col-10 q-mb-md">
+                  <div class="col-12 q-mb-md">
                     <q-input type="number" v-model="number" :float-label="$t('value_label')" />
                   </div>
                   <div class="col-12">
