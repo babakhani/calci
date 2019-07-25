@@ -10,7 +10,7 @@
           flat
           dense
           round
-          color="grey"
+          color="text-primary"
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
           icon="menu"
